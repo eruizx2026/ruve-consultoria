@@ -1,0 +1,195 @@
+  .navbar{
+            background:linear-gradient(to right,rgb(250, 255, 245),rgb(175, 175, 174));
+            color: black;
+        }
+
+.seccion-mision{
+    padding: 100px 0 100px 0;
+    text-align: center;
+    background-color: rgb(52, 175, 175);
+    background: linear-gradient(to right,rgb(36, 107, 3),rgb(132, 179, 3));
+    /*text-shadow: 2px 2px 4px black;*/
+    /*-webkit-text-stroke:0.4px black;*/
+   
+}
+
+.cuadro-elegante{
+  border: 1px solid; border-radius: 4px; background:linear-gradient(to right,rgb(250, 255, 245),rgb(175, 175, 174));padding: 5px;color: rgb(5, 54, 126);
+  box-shadow: 8px 8px 8px rgba(0,0,0,0.35); /* offsetX offsetY blur color */
+}
+
+.cuadro-elegante-b{
+  border: 1px solid; border-radius: 4px; background:linear-gradient(to right,rgb(250, 255, 245),rgb(175, 175, 174));padding: 5px;color: rgb(37, 99, 1);
+  box-shadow: 8px 8px 8px rgba(0,0,0,0.35); /* offsetX offsetY blur color */
+}
+
+.seccion-bienvenido{
+    padding: 100px 0 100px 0;
+    color: white;
+    background-color: rgba(13, 110, 253, 1);
+    background: linear-gradient(to right,rgb(13, 110, 253),rgb(172, 171, 171));
+    /*text-shadow: 2px 2px 4px black;*/
+}
+
+.seccion-qsomos{
+    padding: 100px 0 100px 0;
+     /*text-shadow: 2px 2px 4px black;*/
+     color: white;
+    /*color: rgba(13, 110, 253);*/
+   background: linear-gradient(to right,rgb(36, 107, 3),rgb(132, 179, 3));
+    
+    
+    
+}
+
+/* SECCION SERVICIOS*/
+.seccion-sevicios{
+  
+    padding: 100px 0 100px 0;
+    color: white;
+   background: linear-gradient(to right,rgb(13, 110, 253),rgb(172, 171, 171));
+    
+}
+
+/* SECCION CONTACTO */
+
+.seccion-contacto{
+    /*text-shadow: 2px 2px 4px black;*/
+    padding: 200px 0 200px 0;
+    color: white;
+    background: linear-gradient(to right,rgb(36, 107, 3),rgb(132, 179, 3));
+}
+
+.seccion-footer{
+  /*text-shadow: 2px 2px 4px black;*/
+    padding: 50px 0 50px 0;
+    color: #ffffff;
+    background: linear-gradient(to right,rgb(23, 24, 24),rgb(38, 0, 255));
+}
+
+.boton-ver-mas{
+   color: white;
+}
+
+.boton-ver-mas:hover{
+    background: rgb(11, 81, 186); /* Nuevo color de fondo */
+   
+}
+
+
+.letra-pr1{
+ /*text-shadow: 2px 2px 4px rgb(2, 84, 20);*/
+ color: rgb(4, 4, 4);
+}
+
+.sombra-basica {
+ filter: brightness(60%);
+ 
+}
+.imagen-bienv{
+      box-shadow: 8px 8px 8px rgba(0,0,0,0.35); /* offsetX offsetY blur color */
+
+}
+.btn-nosotros{
+    color:white;
+    height: 70px;text-align:center;
+    box-shadow: 8px 8px 8px rgba(0,0,0,0.35); /* offsetX offsetY blur color */
+     text-decoration: none;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+}
+.btn-nosotros:hover{
+      background-color: rgb(255, 255, 255); /* Nuevo color de fondo */
+      color: rgba(13, 110, 253); /* Nuevo color del texto */  
+      
+}
+
+
+
+/* CAROUSEL QUIENES SOMOS */
+.carrousel-qsomos{
+    text-align: center;
+    background: rgba(119, 116, 116, 0.562);
+}
+
+
+
+
+/* BOTON SECCIONADO */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.section {
+  height: 100vh; /* Cada sección ocupa el alto completo de la pantalla */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
+/* Botón flotante */
+#scrollDownBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s, transform 0.2s;
+  width: 60px;
+  z-index: 1000;
+}
+
+#scrollDownBtn:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+/*IMAGEN ZOOM*/
+
+.img-normativa {
+  transition: transform 0.3s ease; /* Suaviza el efecto */
+}
+
+.img-normativa:hover {
+  transform: scale(1.8); /* Aumenta el tamaño al pasar el mouse */
+}
+
+.boton-personalizado {
+  max-width: 100px;
+  /* Elimina el subrayado */
+  text-decoration: none;
+  
+  /* Color de fondo del botón */
+  background-color: #007bff00; /* Puedes cambiar este color */
+  
+  /* Color del texto */
+  color: white; 
+  
+  /* Espaciado interno para que parezca un botón */
+  padding: 10px 20px;
+  
+  /* Bordes redondeados */
+  border-radius: 5px;
+  
+  /* Para que el padding y el margin funcionen correctamente */
+  display: inline-block; 
+}
+
+/* Opcional: Cambiar el color cuando el ratón está encima */
+.boton-personalizado:hover {
+  background-color: #0057b3;
+}
+
+.card{
+  box-shadow: 8px 8px 8px rgba(0,0,0,0.35); /* offsetX offsetY blur color */
+}
