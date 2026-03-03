@@ -476,7 +476,7 @@
                     <div class="col-lg-6">
                            <h3>Envianos un mensaje</h3>
                             <hr class="light">
-                            <form id="contactForm">
+                            <form id="contactForm" method="POST" action="/sendEmail">
                                 <input type="text" name="name" class="form-control" placeholder="Tu nombre" required>
                                 <br>
                                 <input type="email" name="email" class="form-control"  placeholder="Tu correo" required>
@@ -486,7 +486,7 @@
                                 <button type="submit" class="form-control" >Enviar</button>
                             </form>
 
-                            <script>
+                            <!--script>
                                 const form = document.querySelector("#contactForm");
 
                                         form.addEventListener("submit", async (e) => {
@@ -506,7 +506,7 @@
 
                                         const result = await res.json();
                                         });
-                            </script>
+                            </script-->
                     </div>
                 
                 </div>
