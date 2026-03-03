@@ -477,11 +477,11 @@
                            <h3>Envianos un mensaje</h3>
                             <hr class="light">
                             <form id="contactForm">
-                                <input type="text" name="nombre" class="form-control" placeholder="Tu nombre" required>
+                                <input type="text" name="name" class="form-control" placeholder="Tu nombre" required>
                                 <br>
                                 <input type="email" name="email" class="form-control"  placeholder="Tu correo" required>
                                 <br>
-                                <textarea name="mensaje" class="form-control"  placeholder="Tu mensaje" required></textarea>
+                                <textarea name="message" class="form-control"  placeholder="Tu mensaje" required></textarea>
                                 <br>
                                 <button type="submit" class="form-control" >Enviar</button>
                             </form>
@@ -493,9 +493,9 @@
                                         e.preventDefault();
 
                                         const data = {
-                                            name: form.nombre.value,
+                                            name: form.name.value,
                                             email: form.email.value,
-                                            message: form.mensaje.value
+                                            message: form.message.value
                                         };
 
                                         const res = await fetch("/enviar", {
