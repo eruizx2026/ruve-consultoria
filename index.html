@@ -498,7 +498,7 @@
                                             message: form.message.value
                                         };
 
-                                        const res = await fetch("/enviar", {
+                                        const res = await fetch("/sendEmail", {
                                             method: "POST",
                                             headers: { "Content-Type": "application/json" },
                                             body: JSON.stringify(data)
