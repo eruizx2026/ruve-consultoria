@@ -485,6 +485,28 @@
                                 <br>
                                 <button type="submit" class="form-control" >Enviar</button>
                             </form>
+
+                            <script>
+                                const form = document.querySelector("#contactForm");
+
+                                        form.addEventListener("submit", async (e) => {
+                                        e.preventDefault();
+
+                                        const data = {
+                                            name: form.name.value,
+                                            email: form.email.value,
+                                            message: form.message.value
+                                        };
+
+                                        const res = await fetch("/enviar", {
+                                            method: "POST",
+                                            headers: { "Content-Type": "application/json" },
+                                            body: JSON.stringify(data)
+                                        });
+
+                                        const result = await res.json();
+                                        });
+                            </script>
                     </div>
                 
                 </div>
