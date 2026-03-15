@@ -1,39 +1,93 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultorias</title>
+    <title>Document</title>
     <link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
 
-   /* <style>  */
+    <style>
 
-     
-   
-    </style> 
+        /*card*/
+        .card-img-top {
+            height: 225px;
+            object-fit: cover;
+        }
+
+        .card-img-top {
+            height: 225px;
+            object-fit: cover;
+            filter: brightness(0.7);
+        }
+        /*carrousel
+        .image-container {
+        width: 100%;        
+        height: 600px;        
+        overflow: hidden;     
+        }  
+        .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        }
+
+        .image-container .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4); 
+        }*/
+
+
+
+        .carousel-item img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;           /* prevents distortion */
+        object-position: center;     /* centers image */
+        }
+
+        .feature {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+
+
+        @media (max-width: 768px) {
+        .carousel-item {
+            height: auto;
+        }
+
+        .carousel-item img {
+            height: auto;
+            object-fit: contain;
+        }
+        
+
+        }
+
+
+
+
+    </style>
     
 </head>
 <body>
-<!--div class="container-fluid"-->
-    <! Barra de navegacion del Menu de Arriba XLC-->   
-    <section class="seccion">
+    
+    <!--div class="container-fluid"-->
+        <section class="seccion">
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top " >
                 <div class="container">
-                     <div class="navbar-brand d-flex align-items-center">
-                          <img src="imagenes/logo1.png" alt="logo" class="logo">
-                          <span>RUVE</span>
-                     </div>
-                 </div>
-                    
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </nav>
-</section>  
-                    
+                    <a class="navbar-brand" href="#">RUVE</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
@@ -52,18 +106,108 @@
                             <a class="nav-link" href="#seccion-contacto">Contactanos</a>
                             </li>
 
-                                                     
+                            <!--li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                            </li-->
                         </ul>
                     </div>
                 </div>
             </nav>
-
             
-          
+           <!-- <div class="row">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner"> 
+                        <div class="carousel-item active">
+                            <img src="imagenes/leysilla.jpg" class="d-block w-100 sombra-basica"  alt="...">
+                            <div class="carousel-caption d-none d-md-block " style="color:rgb(255, 255, 255)">
+                                <h3 style="text-shadow: 2px 2px 4px #000;">Ley Silla</h3>
+                                    <!--p>Some representative placeholder content for the first slide.</p-->
+                                <br><br>
+                                <!--a href="apartado1.html" class="btn form-control boton-ver-mas">Ver mas
+                                    <br>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+                                    </svg>
+                                </a-->
+                            </div>
+                        </div>
+                        <!--div class="carousel-item">
+                            <img src="imagenes/capacitaciones-stps.jpg" class="d-block w-100 sombra-basica" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Capacitaciones STPS</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div-->
+                        <div class="carousel-item">
+                            <img src="imagenes/MedioAmbienteLaboral.jpg" class="d-block w-100 sombra-basica" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Estudios Medio Ambiente Laboral STPS</h5>
+                                <!--p>Some representative placeholder content for the third slide.</p-->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/sustanciasquimicas.jpg" class="d-block w-100 sombra-basica" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Analisis de Riesgos STPS</h5>
+                                <!--p>Some representative placeholder content for the third slide.</p-->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/imagen4.jpg" class="d-block w-100 sombra-basica" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Estudios Ambientales SEMARNAT</h5>
+                                <!--p>Some representative placeholder content for the third slide.</p-->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/gestorias.jpg" class="d-block w-100 sombra-basica" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Gestorias</h5>
+                                <!--p>Some representative placeholder content for the third slide.</p-->
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+            </div>   
+        -->    
+            <!--div class="container">
+                <div class="row">
+                    <a href="#seccion-bienvenido" class="btn-nosotros"> Ver Sobre Nosotros
+                            <br>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+                        </svg>
+                    </a>
+                </div>
+            </div-->
+            
         </section>
 
-    <! Se cambio Servicios aqui al principio    14/03/2026 XLC  -->
- <section id="seccion-mision" class="seccion-mision seccion">
+        <section id="seccion-mision" class="seccion-mision seccion">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 cuadro-elegante" >
@@ -422,8 +566,6 @@
 
             </div>
         </section>
-
-    
     <!--/div--><!--DIV CONTAINER-PR-->
 
       <!-- Botón flotante -->
