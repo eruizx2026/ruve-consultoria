@@ -22,36 +22,28 @@
         }
 
    <!-- Aquí va tu CSS -->
-   /* Ajustar el tamaño del logo para que no se haga gigante */
-.logo {
-  width: 60px; /* Tamaño del logo, ajusta según sea necesario */
-  height: auto; /* Mantener la proporción original */
-  margin-right: 10px; /* Espacio entre el logo y el texto */
+  /* Limitar tamaño del logo */
+.navbar-brand .logo {
+  max-width: 50px;    /* Tamaño máximo del logo */
+  height: auto;       /* Mantener proporción */
+  margin-right: 10px; /* Espacio entre logo y texto */
 }
 
-/* Asegurarnos de que el cursor no sea de mano */
+/* Evitar que el cursor cambie a mano */
 .navbar-brand {
-  cursor: default; /* Asegura que el cursor sea normal */
+  cursor: default;
 }
 
-/* Evitar que el contenedor afecte el menú */
-.container {
+/* Alineación flexible y segura dentro del navbar */
+.navbar .container {
   display: flex;
-  align-items: center; /* Alinea verticalmente */
-  justify-content: flex-start; /* Alinea todo a la izquierda */
-  padding: 0; /* Elimina cualquier padding no deseado */
+  align-items: center;       /* Centra verticalmente logo y texto */
+  justify-content: space-between; /* Mantiene el menú al final */
 }
 
-/* Para que no se desajuste el menú o los elementos del navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between; /* Alineación de los elementos */
-  align-items: center; /* Alineación vertical de los elementos */
-}
-
-/* Si el logo y el texto "RUVE" están dentro de un navbar más grande, aseguramos que no se afecte el layout */
+/* Opcional: ajustar tamaño del texto */
 .navbar-brand span {
-  font-size: 1.2rem; /* Ajusta el tamaño del texto si es necesario */
+  font-size: 1.2rem; /* Ajusta según prefieras */
 }
    
    
@@ -63,18 +55,19 @@
     <!--div class="container-fluid"-->
     <! Barra de navegacion del Menu de Arriba XLC-->   
     <section class="seccion">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top " >
-                <div class="container">
-                    <div class="navbar-brand d-flex align-items-center">
-                       <img src="imagenes/logo1.png" alt="logo" class="logo"> 
-                       <span>RUVE</span>
-                    </div>
-                </div>
-                    
-                                      
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container">
+      <div class="navbar-brand d-flex align-items-center">
+        <img src="imagenes/logo1.png" alt="logo" class="logo"> 
+        <span>RUVE</span>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+</section>
                     
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ms-auto">
