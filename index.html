@@ -20,60 +20,29 @@
             object-fit: cover;
             filter: brightness(0.7);
         }
-            
-    
-      /*
-        .carousel-item img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;           /* prevents distortion */
-     /*   object-position: center; */    /* centers image */
-        } */
 
-      /*  .feature {
-            margin-top: 100px;
-            margin-bottom: 100px;
-        }
+   <!-- Aquí va tu CSS -->
+    /* Ajustamos el tamaño del logo */
+    .logo {
+      width: 60px; /* Ajusta el tamaño del logo */
+      height: auto; /* Mantiene la proporción de la imagen */
+      margin-right: 10px; /* Espacio entre el logo y el texto */
+    }
 
-        .carousel-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        }
+    /* Evitar que el cursor cambie a la mano */
+    .navbar-brand {
+      cursor: default; /* Cambia el cursor a la forma normal */
+    }
 
-
-        @media (max-width: 768px) {
-        .carousel-item {
-            height: auto;
-        }
-
-        .carousel-item img {
-            height: auto;
-            object-fit: contain;
-        }
-        
-
-        }   */
-    
-     <style>
-        /* Ajustamos el tamaño del logo */
-        .logo {
-          width: 30px;  /* Ajusta el tamaño del logo como prefieras */
-          height: auto;  /* Mantiene la proporción de la imagen */
-          margin-right: 10px;  /* Espacio entre el logo y el texto */
-          }
-
-       /* Evitar que el cursor cambie a la mano */
-           .navbar-brand {
-           cursor: default;  /* Cambia el cursor a la forma normal */
-          } 
-     </style>
-       
- 
-
-
-
-     /* </style> */
+    /* Aseguramos que todo el contenido esté centrado y no se desacomode */
+    .container {
+      display: flex;
+      align-items: center; /* Alinea el logo y el texto verticalmente */
+      justify-content: flex-start; /* Alinea todo a la izquierda */
+    }
+   
+   
+    </style> 
     
 </head>
 <body>
@@ -82,12 +51,12 @@
     <! Barra de navegacion del Menu de Arriba XLC-->   
     <section class="seccion">
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top " >
-                <div class="container">
-                     <div class="navbar-brand d-flex align-items-center">
-                          <img src="imagenes/logo1.png" alt="logo" class="logo">
-                          <span>RUVE</span>
-                     </div>
-                 </div>
+              <div class="container">
+                  <div class="navbar-brand d-flex align-items-center">
+                       <img src="imagenes/logo1.png" alt="logo" class="logo">
+                       <span>RUVE</span>
+                   </div>
+              </div>
                     
                                       
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
