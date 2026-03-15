@@ -22,24 +22,37 @@
         }
 
    <!-- Aquí va tu CSS -->
-    /* Ajustamos el tamaño del logo */
-    .logo {
-      width: 20px; /* Ajusta el tamaño del logo */
-      height: auto; /* Mantiene la proporción de la imagen */
-      margin-right: 10px; /* Espacio entre el logo y el texto */
-    }
+   /* Ajustar el tamaño del logo para que no se haga gigante */
+.logo {
+  width: 60px; /* Tamaño del logo, ajusta según sea necesario */
+  height: auto; /* Mantener la proporción original */
+  margin-right: 10px; /* Espacio entre el logo y el texto */
+}
 
-    /* Evitar que el cursor cambie a la mano */
-    .navbar-brand {
-      cursor: default; /* Cambia el cursor a la forma normal */
-    }
+/* Asegurarnos de que el cursor no sea de mano */
+.navbar-brand {
+  cursor: default; /* Asegura que el cursor sea normal */
+}
 
-    /* Aseguramos que todo el contenido esté centrado y no se desacomode */
-    .container {
-      display: flex;
-      align-items: center; /* Alinea el logo y el texto verticalmente */
-      justify-content: flex-start; /* Alinea todo a la izquierda */
-    }
+/* Evitar que el contenedor afecte el menú */
+.container {
+  display: flex;
+  align-items: center; /* Alinea verticalmente */
+  justify-content: flex-start; /* Alinea todo a la izquierda */
+  padding: 0; /* Elimina cualquier padding no deseado */
+}
+
+/* Para que no se desajuste el menú o los elementos del navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Alineación de los elementos */
+  align-items: center; /* Alineación vertical de los elementos */
+}
+
+/* Si el logo y el texto "RUVE" están dentro de un navbar más grande, aseguramos que no se afecte el layout */
+.navbar-brand span {
+  font-size: 1.2rem; /* Ajusta el tamaño del texto si es necesario */
+}
    
    
     </style> 
