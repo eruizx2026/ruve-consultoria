@@ -180,6 +180,25 @@ form button {
     padding: 0;
 }
 
+        <!--Iconos Face e instagram centrarlos -->
+        /* Estilos para los iconos de redes sociales */
+#footer .social-icon {
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+#footer .social-icon svg {
+    width: 50px; /* Ajusta el tamaño de los íconos si es necesario */
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Ocultar los textos debajo de los íconos */
+#footer .social-icon p {
+    display: none;
+}
         
 </style>
     
@@ -465,7 +484,12 @@ form button {
                 <hr class="light">
                 <div class="contact-info">
                     <p><strong>Contacto:</strong> Q.F.B Eduardo Ruiz</p>
-                    <p><strong>WhatsApp:</strong> 646 225 5385</p>
+                    <a href="https://wa.me/526462255385" target="_blank" class="btn btn-success d-flex align-items-center"> 
+                               <img src="imagenes/WhatsApp.png" alt="WhatsApp" width="24" class="me-2">  
+                                  <i class="bi bi-whatsapp me-2"></i> <p style="padding-left: 11ch;"> WhatsApp: 646 225 5385</p>
+                               <br>
+                    </a> 
+                  <!--  <p><strong>WhatsApp:</strong> 646 225 5385</p> -->
                     <p><strong>Ubicación:</strong> Somos una empresa ubicada en Ensenada, Baja California, México</p>
                     <img src="imagenes/contacto.png" class="imagen-bienv" alt="" width="300px" style="padding-left: 20px;border-radius: 15px; background-color: #063781;">
                 </div>
